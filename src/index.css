@@ -1,13 +1,114 @@
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "font-ff-spartan-medium";
+  src: url("../src/assets/font-style/static/LeagueSpartan-Medium.ttf");
+}
+
+@font-face {
+  font-family: "font-ff-spartan-bold";
+  src: url("../src/assets/font-style/static/LeagueSpartan-Bold.ttf");
+}
+
+:root {
+  --desaturated-dark-cyan: hsl(180, 29%, 50%);
+  --light-grayish-cyan-back: hsl(180, 52%, 96%);
+  --light-grayish-cyan-filter: hsl(180, 31%, 95%);
+  --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --very-dark-grayish-cyan: hsl(180, 14%, 20%);
+  --white: white;
+  --font-fz-1: 1.5rem;
+  --font-ff-spartan-medium: "font-ff-spartan-medium";
+  --font-ff-spartan-bold: "font-ff-spartan-bold";
+}
+
+body {
+  border: 2px solid var(--desaturated-dark-cyan);
+  font-size: var(--font-fz-1);
+  font-family: var(--font-ff-spartan-medium);
+  background-color: var(--light-grayish-cyan-back);
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.job-company-profile {
+  margin-top: 3rem;
+  padding: 0 2.3rem 0;
+  background-color: var(--white);
+}
+
+.job-company-profile__company-logo {
+  width: 4.8rem;
+  height: 4.8rem;
+  transform: translateY(-50%);
+}
+
+.job-company-profile__company-name {
+  font-size: 1.6rem;
+  letter-spacing: 0.6px;
+  color: var(--desaturated-dark-cyan);
+  margin-right: 2.4rem;
+}
+
+.job-company-profile__details {
+  margin-top: -15px;
+  border-bottom: 1px solid var(--dark-grayish-cyan);
+  padding-bottom: 2rem;
+}
+
+.job-company-profile__status {
+  padding: 0.6rem 0.9rem;
+  font-family: var(--font-ff-spartan-bold);
+  background-color: var(--desaturated-dark-cyan);
+  color: var(--white);
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+
+.job-company-profile__status + .job-company-profile__status {
+  margin-left: 0.8rem;
+}
+
+.job-company-profile__status--featured {
+  background-color: var(--very-dark-grayish-cyan);
+}
+
+.job-company-profile__header {
+  display: flex;
+  align-items: center;
+}
+
+.job-company-profile__position {
+  margin: 1.4rem 0 1.7rem;
+  font-size: 1.7rem;
+  color: var(--very-dark-grayish-cyan);
+}
+
+.job-company-profile__post-timeline {
+  display: flex;
+}
+
+.job-company-profile__meta {
+  color: var(--dark-grayish-cyan);
+}
+
+.job-company-profile__meta + .job-company-profile__meta {
+  margin-left: 1rem;
+}
+
+/* utility class */
+.hidden {
+  display: none;
 }
