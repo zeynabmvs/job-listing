@@ -214,6 +214,11 @@ body {
 }
 
 @media (min-width: 80rem) {
+  .job-company-profile {
+    display: flex;
+    padding: 3.2rem 4rem 0;
+  }
+
   .job-company-profile__company-logo {
     width: 7.8rem;
     height: 7.8rem;
