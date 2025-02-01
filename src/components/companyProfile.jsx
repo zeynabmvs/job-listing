@@ -31,13 +31,7 @@ const JobCompanyProfile = () => {
             .{" "}
             {data[0].location
               .split(" ")
-              .map((elem, i) => {
-                if (i === 1) {
-                  return elem.toLowerCase();
-                }
-
-                return elem;
-              })
+              .map((elem, i) => (i === 1 ? elem.toLowerCase() : elem))
               .join(" ")}
           </p>
         </div>
