@@ -25,10 +25,13 @@ const JobCompanyProfile = () => {
 
         <div className="job-company-profile__post-timeline">
           <p className="job-company-profile__meta">{data[0].postedAt}</p>
-          <p className="job-company-profile__meta">. {data[0].contract}</p>
+          <p className="job-company-profile__meta">
+            <strong>.</strong>
+            {data[0].contract}
+          </p>
 
           <p className="job-company-profile__meta">
-            .{" "}
+            <strong>.</strong>
             {data[0].location
               .split(" ")
               .map((elem, i) => (i === 1 ? elem.toLowerCase() : elem))
