@@ -206,6 +206,7 @@ body {
   .job-company-profile__details {
     margin-top: 0;
     border-bottom: 0;
+    padding-bottom: 3.2rem;
   }
 
   .job-company-profile__position {
