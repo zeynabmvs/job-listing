@@ -3,7 +3,7 @@ import JobCompanyProfile from "./components/companyProfile";
 import Filters from "./components/Filters";
 
 function App() {
-  const [activeFilters, setActiveFilters] = useState(["java", "frontend"]);
+  const [activeFilters, setActiveFilters] = useState([]);
 
   const addToFilters = (newFilter) => {
     if (activeFilters.includes(newFilter)) {
@@ -18,6 +18,10 @@ function App() {
     );
   };
 
+  const isFilterActive = (filter) => {
+    return activeFilters.includes(filter);
+  };
+
   const clearAllFilters = () => {
     setActiveFilters([]);
   };
@@ -30,6 +34,20 @@ function App() {
         handleRemoveFilter={removeFilter}
       />
       <JobCompanyProfile />
+
+      {/* for Test filters: */}
+      <button
+        onClick={() => addToFilters("react")}
+        className={`${isFilterActive("react") ? "active" : ""}`}
+      >
+        react
+      </button>
+      <button
+        onClick={() => addToFilters("javaScript")}
+        className={`${isFilterActive("javaScript") ? "active" : ""}`}
+      >
+        javaScript
+      </button>
     </div>
   );
 }
