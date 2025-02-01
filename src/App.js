@@ -1,6 +1,7 @@
 import { useState } from "react";
-import JobCompanyProfile from "./components/companyProfile";
 import Filters from "./components/Filters";
+import JobList from "./components/jobList";
+import data from "./services/data.json";
 
 function App() {
   const [activeFilters, setActiveFilters] = useState([]);
@@ -33,7 +34,8 @@ function App() {
         handleClearFilters={clearAllFilters}
         handleRemoveFilter={removeFilter}
       />
-      <JobCompanyProfile />
+      {/* <JobCompanyProfile /> */}
+      <JobList jobs={data} />
 
       {/* for Test filters: */}
       <button
