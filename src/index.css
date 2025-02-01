@@ -44,9 +44,10 @@ body {
 }
 
 .job-company-profile {
-  margin-top: 3rem;
   padding: 0 2.3rem 0;
   background-color: var(--white);
+  /* max-width: 41rem; */
+  margin: 3rem auto 0;
 }
 
 .job-company-profile__company-logo {
@@ -108,13 +109,18 @@ body {
   margin-left: 1rem;
 }
 
+.job-company-profile__meta strong {
+  margin-right: 0.9rem;
+}
+
 /* utility class */
 .hidden {
   display: none;
 }
 
 .box-shadow {
-  box-shadow: hsla(180, 29%, 50%, 0.1) 0px 20px 25px -5px, hsla(180, 29%, 50%, 0.04) 0px 10px 10px -5px;
+  box-shadow: hsla(180, 29%, 50%, 0.1) 0px 20px 25px -5px,
+    hsla(180, 29%, 50%, 0.04) 0px 10px 10px -5px;
 }
 
 /* ======= Filters section ======= */
@@ -177,8 +183,52 @@ body {
   font-family: inherit;
   transition: all 0.2s ease-in-out;
 }
+
 .filters__action__clear:hover {
   color: var(--desaturated-dark-cyan);
   text-decoration: underline;
   text-decoration-color: inherit;
+}
+
+@media (min-width: 40rem) {
+  .job-company-profile {
+    display: flex;
+    padding: 3.2rem 2.3rem 0;
+  }
+
+  .job-company-profile__company-logo {
+    transform: translateY(0);
+    width: 6.8rem;
+    height: 6.8rem;
+    margin-right: 2.3rem;
+  }
+
+  .job-company-profile__details {
+    margin-top: 0;
+    border-bottom: 0;
+  }
+
+  .job-company-profile__position {
+    margin: 1.6rem 0 1.4rem;
+  }
+}
+
+@media (min-width: 80rem) {
+  .job-company-profile__company-logo {
+    width: 7.8rem;
+    height: 7.8rem;
+  }
+
+  .job-company-profile__meta strong {
+    margin-right: 1.4rem;
+  }
+
+  .job-company-profile__position {
+    font-size: 2.2rem;
+    margin: 1.7rem 0 1.5rem;
+  }
+
+  .job-company-profile__meta {
+    font-size: 1.7rem;
+  }
 }
