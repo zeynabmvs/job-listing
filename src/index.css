@@ -30,6 +30,9 @@ html {
   --font-fz-1: 1.5rem;
   --font-ff-spartan-medium: "font-ff-spartan-medium";
   --font-ff-spartan-bold: "font-ff-spartan-bold";
+
+  --box-shadow: hsla(180, 29%, 50%, 0.1) 0px 20px 25px -5px,
+  hsla(180, 29%, 50%, 0.04) 0px 10px 10px -5px;
 }
 
 body {
@@ -118,13 +121,9 @@ body {
   display: none;
 }
 
-.box-shadow {
-  box-shadow: hsla(180, 29%, 50%, 0.1) 0px 20px 25px -5px,
-    hsla(180, 29%, 50%, 0.04) 0px 10px 10px -5px;
-}
 
 /* ======= Filters section ======= */
-.filters {
+.filter-box {
   width: 100%;
   background-color: var(--white);
   padding: 2rem;
@@ -134,16 +133,17 @@ body {
   align-items: center;
   /* flex-wrap: wrap; */
   gap: 1.6rem;
+  box-shadow: var(--box-shadow);
 }
 
-.filters__active {
+.filter-box__items {
   display: flex;
   align-items: center;
   gap: 1.6rem;
   flex-wrap: wrap;
 }
 
-.filters__active__item {
+.filter-box__item {
   color: var(--desaturated-dark-cyan);
   border-radius: 0.4rem;
   display: inline-block;
@@ -154,11 +154,11 @@ body {
   gap: 0.8rem;
   overflow: hidden;
 }
-.filters__active__item > span {
+.filter-box__item > span {
   padding: 0.8rem 0 0.8rem 0.8rem;
 }
 
-.filters__active__item__remove {
+.filter-box__remove-item {
   cursor: pointer;
   background-color: var(--desaturated-dark-cyan);
   border: none;
@@ -170,11 +170,11 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-.filters__active__item__remove:hover {
+.filter-box__remove-item:hover {
   background-color: var(--very-dark-grayish-cyan);
 }
 
-.filters__action__clear {
+.filter-box__clear-all {
   background-color: unset;
   border: none;
   cursor: pointer;
@@ -184,7 +184,7 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-.filters__action__clear:hover {
+.filter-box__clear-all:hover {
   color: var(--desaturated-dark-cyan);
   text-decoration: underline;
   text-decoration-color: inherit;
