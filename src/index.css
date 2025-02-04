@@ -32,7 +32,7 @@ html {
   --font-ff-spartan-bold: "font-ff-spartan-bold";
 
   --box-shadow: hsla(180, 29%, 50%, 0.1) 0px 20px 25px -5px,
-  hsla(180, 29%, 50%, 0.04) 0px 10px 10px -5px;
+    hsla(180, 29%, 50%, 0.04) 0px 10px 10px -5px;
 }
 
 body {
@@ -56,7 +56,7 @@ body {
 .job-company-profile__company-logo {
   width: 4.8rem;
   height: 4.8rem;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
 }
 
 .job-company-profile__company-name {
@@ -67,7 +67,7 @@ body {
 }
 
 .job-company-profile__details {
-  margin-top: -15px;
+  /* margin-top: -15px; */
   border-bottom: 1px solid var(--dark-grayish-cyan);
   padding-bottom: 2rem;
 }
@@ -120,7 +120,6 @@ body {
 .hidden {
   display: none;
 }
-
 
 /* ======= Filters section ======= */
 .filter-box {
@@ -241,4 +240,29 @@ body {
   .job-company-profile__meta + .job-company-profile__meta {
     margin-left: 1.9rem;
   }
+}
+
+/* CSS For Job Description Component */
+
+.job-description-container {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.3rem 0;
+  margin: 3rem auto 0;
+}
+
+.job-description-label {
+  font-size: 1.8rem;
+  background-color: var(--light-grayish-cyan-filter);
+  color: var(--desaturated-dark-cyan);
+  padding: 1.4rem 1.8rem;
+  margin-right: 2.4rem;
+  border-radius: 1rem;
+}
+.job-description-languages-list {
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 1.6rem;
 }

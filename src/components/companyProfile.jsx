@@ -1,6 +1,7 @@
 import React from "react";
 import { URL } from "../config/config";
 import Tag from "./tag";
+import JobDescription from "./JobDescription";
 
 const JobCompanyProfile = ({ job }) => {
   return (
@@ -36,6 +37,11 @@ const JobCompanyProfile = ({ job }) => {
           </p>
         </div>
       </div>
+
+      <div className='job-description-container'>
+        <JobDescription job={job}></JobDescription>
+      </div>
+
     </div>
   );
 };

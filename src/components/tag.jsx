@@ -2,7 +2,6 @@ import React from "react";
 
 const Tag = ({ New, featured }) => {
   const featureObj = { new: New, featured };
-
   return (
     <div>
       {Object.entries(featureObj)
