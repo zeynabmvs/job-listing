@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  border: 2px solid var(--desaturated-dark-cyan);
+  /* border: 2px solid var(--desaturated-dark-cyan); */
   font-size: var(--font-fz-1);
   font-family: var(--font-ff-spartan-medium);
   background-color: var(--light-grayish-cyan-back);
@@ -49,14 +49,15 @@ body {
 .job-company-profile {
   padding: 0 2.3rem 0;
   background-color: var(--white);
-  /* max-width: 41rem; */
-  margin: 3rem auto 0;
+  padding-bottom: 2.5rem;
+  margin: 6rem auto 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .job-company-profile__company-logo {
   width: 4.8rem;
   height: 4.8rem;
-  /* transform: translateY(-50%); */
+  transform: translateY(-50%);
 }
 
 .job-company-profile__company-name {
@@ -67,7 +68,6 @@ body {
 }
 
 .job-company-profile__details {
-  /* margin-top: -15px; */
   border-bottom: 1px solid var(--dark-grayish-cyan);
   padding-bottom: 2rem;
 }
@@ -130,7 +130,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* flex-wrap: wrap; */
   gap: 1.6rem;
   box-shadow: var(--box-shadow);
 }
@@ -146,13 +145,13 @@ body {
   color: var(--desaturated-dark-cyan);
   border-radius: 0.4rem;
   display: inline-block;
-  /* padding: 0.4rem 0.8rem; */
   background-color: var(--light-grayish-cyan-filter);
   display: flex;
   align-items: center;
   gap: 0.8rem;
   overflow: hidden;
 }
+
 .filter-box__item > span {
   padding: 0.8rem 0 0.8rem 0.8rem;
 }
@@ -189,16 +188,69 @@ body {
   text-decoration-color: inherit;
 }
 
-@media (min-width: 40rem) {
+/* CSS For Job Description Component */
+.job-description-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 2rem auto 0;
+}
+
+.job-description-label {
+  font-size: 1.6rem;
+  background-color: var(--light-grayish-cyan-filter);
+  color: var(--desaturated-dark-cyan);
+  padding: 1.2rem 1.4rem;
+  border-radius: 1rem;
+}
+
+.job-description-languages-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.job-description-tools-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+/* Responsive Design */
+/* @media (min-width: 40rem) {
   .job-company-profile {
     display: flex;
-    padding: 3.2rem 2.3rem 0;
+    flex-wrap: wrap;
+  }
+} */
+
+@media (min-width: 40rem) {
+  body {
+    margin: auto 10rem;
+  }
+  .job-company-profile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0.5rem;
+  }
+
+  .job-company-profile__header-container {
+    display: flex;
+    flex-direction: column;
   }
 
   .job-company-profile__company-logo {
-    transform: translateY(0);
     width: 6.8rem;
     height: 6.8rem;
+    transform: translateY(-50%);
     margin-right: 2.3rem;
   }
 
@@ -211,17 +263,48 @@ body {
   .job-company-profile__position {
     margin: 1.6rem 0 1.4rem;
   }
+  .job-description-container {
+    margin: 0;
+    gap: 2rem;
+  }
+  .job-description-label {
+    font-size: 1.8rem;
+    padding: 1.4rem 1.8rem;
+  }
+
+  .job-description-languages-list {
+    gap: 2rem;
+  }
+
+  .job-description-tools-list {
+    gap: 2rem;
+  }
 }
 
 @media (min-width: 80rem) {
-  .job-company-profile {
-    display: flex;
-    padding: 3.2rem 4rem 0;
+  body {
+    margin: auto 20rem;
   }
 
+  .job-company-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem;
+  }
+  .job-company-profile__header-container {
+    display: flex;
+    flex-direction: row;
+  }
   .job-company-profile__company-logo {
     width: 7.8rem;
     height: 7.8rem;
+    transform: translateY(0);
+  }
+
+  .job-company-profile__details {
+    padding-bottom: 0;
   }
 
   .job-company-profile__meta strong {
@@ -240,29 +323,4 @@ body {
   .job-company-profile__meta + .job-company-profile__meta {
     margin-left: 1.9rem;
   }
-}
-
-/* CSS For Job Description Component */
-
-.job-description-container {
-  width: max-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 2.3rem 0;
-  margin: 3rem auto 0;
-}
-
-.job-description-label {
-  font-size: 1.8rem;
-  background-color: var(--light-grayish-cyan-filter);
-  color: var(--desaturated-dark-cyan);
-  padding: 1.4rem 1.8rem;
-  margin-right: 2.4rem;
-  border-radius: 1rem;
-}
-.job-description-languages-list {
-  display: flex;
-  gap: 1.6rem;
-  margin-top: 1.6rem;
 }
