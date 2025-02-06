@@ -51,7 +51,7 @@ body {
   background-color: var(--white);
   padding-bottom: 2.5rem;
   margin: 5rem auto 0;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: var(--box-shadow);
 }
 
 .job-company-profile__company-logo {
@@ -202,8 +202,8 @@ body {
   font-size: 1.6rem;
   background-color: var(--light-grayish-cyan-filter);
   color: var(--desaturated-dark-cyan);
-  padding: 1.2rem 1.4rem;
-  border-radius: 1rem;
+  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+  border-radius: 0.4rem;
   transition: color 0.1s linear, background-color 0.1s linear;
 }
 .job-description-label:hover {
@@ -276,7 +276,7 @@ body {
   }
   .job-description-label {
     font-size: 1.8rem;
-    padding: 1.4rem 1.8rem;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
   }
 
   .job-description-languages-list {
