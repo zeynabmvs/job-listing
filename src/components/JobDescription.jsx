@@ -15,11 +15,13 @@ const JobDescription = ({ job }) => {
       </div>
 
       {/* Tools */}
-      <div className="job-description-tools-list">
-        {job.tools.map((language, index) => (
-          <span key={`lang-${index}`} className='job-description-label'>{language}</span>
-        ))}
-      </div>
+      {job.tools.length > 0 &&
+        <div className="job-description-tools-list">
+          {job.tools?.map((language, index) => (
+            <span key={`lang-${index}`} className='job-description-label'>{language}</span>
+          ))}
+        </div>
+      }
     </>
   )
 }
