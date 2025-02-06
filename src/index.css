@@ -54,6 +54,10 @@ body {
   box-shadow: var(--box-shadow);
 }
 
+.job-company-profile--featured {
+  border-left: 5px solid var(--desaturated-dark-cyan);
+}
+
 .job-company-profile__company-logo {
   width: 4.8rem;
   height: 4.8rem;
@@ -74,7 +78,7 @@ body {
 
 .job-company-profile__status {
   padding: 0.6rem 0.9rem;
-  font-family: var(--font-ff-spartan-bold);
+  font-family: var(--font-ff-spartan-medium);
   background-color: var(--desaturated-dark-cyan);
   color: var(--white);
   text-transform: uppercase;

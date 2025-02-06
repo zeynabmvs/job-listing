@@ -1,1 +1,1 @@
-export const URL = process.env.PUBLIC_URL + "/assets/";
+export const URL = process.env.PUBLIC_URL + "/assets";

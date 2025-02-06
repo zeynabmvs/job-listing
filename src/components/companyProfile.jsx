@@ -5,8 +5,11 @@ import JobDescription from "./JobDescription";
 
 const JobCompanyProfile = ({ job }) => {
   return (
-    <div className="job-company-profile">
-
+    <div
+      className={`job-company-profile ${
+        job.featured ? "job-company-profile--featured" : ""
+      }`}
+    >
       <div className="job-company-profile__header-container">
         <img
           src={`${URL}${job.logo.slice(1)}`}
@@ -39,10 +42,9 @@ const JobCompanyProfile = ({ job }) => {
           </div>
         </div>
       </div>
-      <div className='job-description-container'>
+      <div className="job-description-container">
         <JobDescription job={job}></JobDescription>
       </div>
-
     </div>
   );
 };
