@@ -33,10 +33,6 @@ function App() {
     );
   };
 
-  // const isFilterActive = (filter) => {
-  //   return activeFilters.includes(filter);
-  // };
-
   const clearAllFilters = () => {
     setActiveFilters([]);
   };
@@ -51,29 +47,19 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <Filters
-        activeFilters={activeFilters}
-        handleClearFilters={clearAllFilters}
-        handleRemoveFilter={removeFilter}
-      />
-      {/* <JobCompanyProfile /> */}
-      <JobList onAddFilter={handleAddFilter} jobs={filteredJobs} />
-
-      {/* for Test filters:
-      <button
-        onClick={() => addToFilters("react")}
-        className={`${isFilterActive("react") ? "active" : ""}`}
-      >
-        react
-      </button>
-      <button
-        onClick={() => addToFilters("javaScript")}
-        className={`${isFilterActive("javaScript") ? "active" : ""}`}
-      >
-        javaScript
-      </button> */}
-    </div>
+    <>
+      <header>
+        
+      </header>
+      <div className="app">
+        <Filters
+          activeFilters={activeFilters}
+          handleClearFilters={clearAllFilters}
+          handleRemoveFilter={removeFilter}
+        />
+        <JobList onAddFilter={handleAddFilter} jobs={filteredJobs} />
+      </div>
+    </>
   );
 }
 

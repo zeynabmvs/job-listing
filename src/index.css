@@ -42,8 +42,21 @@ body {
   background-color: var(--light-grayish-cyan-back);
 }
 
+header{
+  height: 156px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--desaturated-dark-cyan);
+  background-image: url('/public/assets/images/bg-header-mobile.svg');
+}
+
 .app {
   min-height: 100vh;
+  width:90%;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding-bottom: 6.4rem;
 }
 
 .job-company-profile {
@@ -136,6 +149,8 @@ body {
   align-items: center;
   gap: 1.6rem;
   box-shadow: var(--box-shadow);
+  margin-top: -3.5rem;
+
 }
 
 .filter-box__items {
@@ -242,7 +257,11 @@ body {
 
 @media (min-width: 40rem) {
   body {
-    margin: auto 10rem;
+    /* margin: auto 10rem; */
+  }
+
+  header {
+    background-image: url('/public/assets/images/bg-header-desktop.svg');
   }
   .job-company-profile {
     display: flex;
@@ -294,7 +313,7 @@ body {
 
 @media (min-width: 80rem) {
   body {
-    margin: auto 15rem;
+    /* margin: auto 15rem; */
   }
 
   .job-company-profile {
