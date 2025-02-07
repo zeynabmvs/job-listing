@@ -3,7 +3,7 @@ import { URL } from "../config/config";
 import Tag from "./tag";
 import JobDescription from "./JobDescription";
 
-const JobCompanyProfile = ({ job }) => {
+const JobCompanyProfile = ({ job, onAddFilter }) => {
   return (
     <div
       className={`job-company-profile ${
@@ -42,7 +42,7 @@ const JobCompanyProfile = ({ job }) => {
           </div>
         </div>
       </div>
-      <div className="job-description-container">
+      <div className="job-description-container" onClick={onAddFilter}>
         <JobDescription job={job}></JobDescription>
       </div>
     </div>
