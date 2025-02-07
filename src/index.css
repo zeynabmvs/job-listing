@@ -25,6 +25,7 @@ html {
   --light-grayish-cyan-back: hsl(180, 52%, 96%);
   --light-grayish-cyan-filter: hsl(180, 31%, 95%);
   --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --dark-grayish-cyan-50: hsla(180, 8%, 52%, 50%);
   --very-dark-grayish-cyan: hsl(180, 14%, 20%);
   --white: white;
   --font-fz-1: 1.5rem;
@@ -65,6 +66,7 @@ header{
   padding-bottom: 2.5rem;
   margin: 5rem auto 0;
   box-shadow: var(--box-shadow);
+  border-radius: 0.4rem;
 }
 
 .job-company-profile--featured {
@@ -85,12 +87,12 @@ header{
 }
 
 .job-company-profile__details {
-  border-bottom: 1px solid var(--dark-grayish-cyan);
+  border-bottom: 1px solid var(--dark-grayish-cyan-50);
   padding-bottom: 2rem;
 }
 
 .job-company-profile__status {
-  padding: 0.6rem 0.9rem;
+  padding: 0.8rem 0.9rem 0.6rem 0.9rem;
   font-family: var(--font-ff-spartan-medium);
   background-color: var(--desaturated-dark-cyan);
   color: var(--white);
@@ -268,8 +270,7 @@ header{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 0.5rem;
-    margin: 3rem auto 0;
+    /* margin: 3rem auto 0; */
   }
 
   .job-company-profile__header-container {
@@ -322,6 +323,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 3.5rem;
+    margin: 3rem auto 0;
   }
   .job-company-profile__header-container {
     display: flex;
