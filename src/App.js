@@ -49,16 +49,16 @@ function App() {
   return (
     <>
       <header>
-        
+        <h1 className="visually-hidden">Job Listings Page</h1>
       </header>
-      <div className="app">
+      <main className="app">
         <Filters
           activeFilters={activeFilters}
           handleClearFilters={clearAllFilters}
           handleRemoveFilter={removeFilter}
         />
         <JobList onAddFilter={handleAddFilter} jobs={filteredJobs} />
-      </div>
+      </main>
     </>
   );
 }

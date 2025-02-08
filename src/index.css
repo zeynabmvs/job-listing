@@ -52,8 +52,11 @@ header{
   background-image: url('/public/assets/images/bg-header-mobile.svg');
 }
 
-.app {
+#root{
   min-height: 100vh;
+}
+
+.app {
   width:90%;
   margin: 0 auto;
   max-width: 1100px;
@@ -231,6 +234,8 @@ header{
   padding: 0.8rem 0.8rem 0.8rem 0.8rem;
   border-radius: 0.4rem;
   transition: color 0.1s linear, background-color 0.1s linear;
+  border: none;
+  font-family: inherit;
 }
 .job-description-label:hover {
   background-color: var(--desaturated-dark-cyan);
@@ -360,4 +365,16 @@ header{
   .job-company-profile__meta + .job-company-profile__meta {
     margin-left: 1.9rem;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

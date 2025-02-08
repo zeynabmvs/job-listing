@@ -1,29 +1,55 @@
-import React from 'react'
+import React from "react";
 
 const JobDescription = ({ job }) => {
-
   return (
     <>
-      <span className='job-description-label'>{job.role}</span>
-      <span className='job-description-label'>{job.level}</span>
+      <button
+        className="job-description-label"
+        tabIndex="0"
+        aria-label={`Filter by role: ${job.role}`}
+      >
+        {job.role}
+      </button>
+      {/* Level */}
+      <button
+        className="job-description-label"
+        tabIndex="0"
+        aria-label={`Filter by level: ${job.level}`}
+      >
+        {job.level}
+      </button>
 
       {/* Languages */}
       <div className="job-description-languages-list">
-        {job.languages.map((language, index) => (
-          <span key={`lang-${index}`} className='job-description-label'>{language}</span>
+        {job.languages?.map((language, index) => (
+          <button
+            key={`lang-${index}`}
+            className="job-description-label"
+            tabIndex="0"
+            aria-label={`Filter by language: ${language}`}
+          >
+            {language}
+          </button>
         ))}
       </div>
 
       {/* Tools */}
-      {job.tools.length > 0 &&
+      {job.tools.length > 0 && (
         <div className="job-description-tools-list">
-          {job.tools?.map((language, index) => (
-            <span key={`lang-${index}`} className='job-description-label'>{language}</span>
+          {job.tools.map((tool, index) => (
+            <button
+              key={`tool-${index}`}
+              className="job-description-label"
+              tabIndex="0"
+              aria-label={`Filter by tool: ${tool}`}
+            >
+              {tool}
+            </button>
           ))}
         </div>
-      }
+      )}
     </>
-  )
-}
+  );
+};
 
-export default JobDescription
+export default JobDescription;

@@ -5,7 +5,7 @@ import JobDescription from "./JobDescription";
 
 const JobCompanyProfile = ({ job, onAddFilter }) => {
   return (
-    <div
+    <article
       className={`job-company-profile ${
         job.featured ? "job-company-profile--featured" : ""
       }`}
@@ -14,21 +14,23 @@ const JobCompanyProfile = ({ job, onAddFilter }) => {
         <img
           src={`${URL}${job.logo.slice(1)}`}
           className="job-company-profile__company-logo"
-          alt="company logo"
+          alt={`${job.company} logo`}
         />
         <div className="job-company-profile__details">
           <div className="job-company-profile__header">
-            <h1 className="job-company-profile__company-name">{job.company}</h1>
+            <h2 className="job-company-profile__company-name">{job.company}</h2>
 
             <Tag New={job.new} featured={job.featured} />
           </div>
 
-          <h2 className="job-company-profile__position">{job.position}</h2>
+          <h3 className="job-company-profile__position" tabIndex="0">
+            {job.position}
+          </h3>
 
           <div className="job-company-profile__post-timeline">
             <p className="job-company-profile__meta">{job.postedAt}</p>
             <p className="job-company-profile__meta">
-              <strong>.</strong>
+              <strong aria-hidden="true">.</strong>
               {job.contract}
             </p>
 
@@ -45,7 +47,7 @@ const JobCompanyProfile = ({ job, onAddFilter }) => {
       <div className="job-description-container" onClick={onAddFilter}>
         <JobDescription job={job}></JobDescription>
       </div>
-    </div>
+    </article>
   );
 };
 
