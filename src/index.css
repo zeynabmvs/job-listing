@@ -104,6 +104,11 @@ body {
   color: var(--very-dark-grayish-cyan);
 }
 
+.job-company-profile__position:hover {
+  color: var(--desaturated-dark-cyan);
+  cursor: pointer;
+}
+
 .job-company-profile__post-timeline {
   display: flex;
 }
