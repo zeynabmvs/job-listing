@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Frontend Mentor - Job Listings with Filtering Solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Job Listings with Filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). Our team took on this challenge to improve our collaboration skills, enhance our frontend development knowledge, and build a real-world project together.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [Our process](#our-process)
+  - [Built with](#built-with)
+  - [What we learned](#what-we-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Contributors](#contributors)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### The challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Users should be able to:
 
-### `npm test`
+- Filter job listings based on the selected categories.
+- View the optimal layout for the interface depending on their device's screen size.
+- See hover and focus states for all interactive elements on the page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+We used the provided `data.json` file to populate the content dynamically on the first load.
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Project Screenshot](./screenshot.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+*Add a screenshot of your solution. To take a full-page screenshot, use your browser's built-in screenshot tools or an extension like FireShot.*
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Links
 
-### `npm run eject`
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Our process
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Built with
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox & CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Create React App](https://create-react-app.dev/) - Project setup
+- [React DOM](https://reactjs.org/docs/react-dom.html) - Rendering library
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### What we learned
 
-## Learn More
+This project helped us gain hands-on experience in:
+- Managing state and filtering logic in React.
+- Collaborating in a team using Git and GitHub.
+- Structuring and organizing a frontend project efficiently.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Continued development
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Going forward, we plan to:
+- Improve the UI/UX based on feedback.
+- Optimize performance for large datasets.
+- Experiment with different state management solutions like Zustand or Redux.
 
-### Code Splitting
+### Useful resources
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [React Docs](https://react.dev/) - Official documentation for React.
+- [Frontend Mentor](https://www.frontendmentor.io/) - The source of this challenge.
+- [MDN Web Docs](https://developer.mozilla.org/) - For HTML, CSS, and JavaScript references.
 
-### Analyzing the Bundle Size
+## Contributors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+We worked on this project as a team to learn and improve our skills in frontend development and collaboration.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
+A big thank you to all team members for their efforts and contributions. This project was an opportunity for us to practice working together, solve real-world frontend challenges, and refine our coding skills.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We also appreciate [Frontend Mentor](https://www.frontendmentor.io/) for providing high-quality challenges that help developers grow.
