@@ -37,7 +37,7 @@ We used the provided `data.json` file to populate the content dynamically on the
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://zeynabmvs.github.io/job-listing/)
 
 ## Our process
 
